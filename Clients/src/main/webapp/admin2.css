@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/* admin2.css */
+
+/* Sidebar */
+*{
+  font-family: sans-serif;
+  color: white;
+}
+
+body{
+  background-color: #0c243c;
+  
+}
+.sidebar {
+    width: 200px;
+    background: #0c243c;
+    /*color: black;*/
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border: 2px solid #01c4c7 ;
+  }
+  
+  .sidebar-brand {
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    color: black;
+    background-color:#01c4c7 ;
+  }
+  
+  .sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    
+  }
+  
+  .sidebar-menu ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-menu ul li a {
+    /*color: black;*/
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #01c4c7;
+  }
+
+  .sidebar-menu ul li a:hover{
+    background: #01c4c7;
+  }
+  
+  .sidebar-menu ul li a.active {
+    background: #01c4c7;
+    color: #01c4c7;
+  }
+  
+  /* Main */
+  main {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group textarea,
+  .form-group input[type="file"],
+  .form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #01c4c7;
+    border-radius: 4px;
+    color: black;
+  }
+  
+  button[type="submit"] {
+    background: #01c4c7;
+    color: #0c243c;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background: #01c4c7;
+  }
+
+  .menu-item [type="text"],
+  .menu-item [type="file"],
+  .menu-item [type="number"]
+   {
+    border: 1px solid #01c4c7;
+    border-radius: 4px;
+    padding: 5px;
+    color: black;
+   
+  }
+  hr{
+	  color:#01c4c7 ;
+  }
+
+
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    border: radius 20px;
+    background-color: #01c4c7;
+}
+
+/* Centered Content */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    height: 100vh; /* Adjust as needed for vertical centering */
+}
+
+/* Buttons */
+.button {
+    background-color: #01c4c7;
+    width: 300px;
+    height: 50px;
+    color: #0c243c;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.centered-content a {
+	text-decoration: none;
+}
+.button:hover {
+    background-color: #0c243c;
+    color: #01c4c7;
+}
+

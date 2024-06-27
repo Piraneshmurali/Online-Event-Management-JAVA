@@ -1,0 +1,277 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    margin: 0 100px;
+    background-color: #0c243c;
+}
+
+
+/*menu*/
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav .logo h1{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: white;
+}
+
+.nav .logo b{
+    color: #01c4c7;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 40px;
+}
+
+.nav ul li:hover{
+    cursor: pointer;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/*active*/
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #01c4c7;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+/*input*/
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.signin {
+    background-color: #01c4c7;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/*content text*/
+/*left side*/
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+
+.content .content-left .info{
+    max-width: 100%;
+    display: block;
+    flex-direction:column ;
+}
+
+.content .content-left .info{
+    font-size: 100px;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+
+.content .content-left .info{
+    font-size: 20px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+/*content*/
+/*button*/
+.content .content-left button {
+    padding: 10px 23px;
+    background-color: #01c4c7;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.content .content-left button b{
+    padding: 10px 23px;
+    background-color: #01c4c7;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+
+.content .content-right img{
+    width: 650px;
+    height: auto;
+    position: relative;
+    user-select: none;
+    border-radius: 5%;
+    /* animation: rotate 10s liner infinite; */
+}
+
+#line{
+    margin-top: 70px;
+}
+/*content*/
+/*Animation*/
+/*
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+*/
+
+/*Cards*/
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.category .list-items h3{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 150px;
+
+}
+
+.category .card-list .card{
+    width: 370px;
+    height: auto;
+    display: block;
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    background: #0c243c;
+    outline: 2px solid #01c4c7;
+}
+
+.category .card-list .card img{
+    width: 200px;
+    height: auto;
+    bottom: 200px;
+    left: 90px;
+    border-radius: 50%;
+    
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow:0 10px 10px #01c4c7;
+}
+
+.category .card-list .card .food-title{
+    padding: 10px 0 10px;
+}
+
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #01c4c7;
+}
+
+.category .card .desc-food p{
+    font-size: 13px;
+    text-align: center;
+    /* font-weight: 500; */
+    color: white;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.category .card .price span{
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: space-between; */
+    font-weight: bold;
+    color:white ;
+    text-decoration-line: underline;
+    margin-right: 40px;
+}
+
+.category .card .price span button{
+    background-color: #01c4c7;
+    color: black;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border: radius 20px; 
+    background-color: #01c4c7;
+}
+
+#pack{
+    color: #01c4c7;
+}

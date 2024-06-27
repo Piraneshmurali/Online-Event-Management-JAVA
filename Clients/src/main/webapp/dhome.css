@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#0c243c ;
+}
+
+.gender-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gender-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: inline-block;
+}
+
+form label, select, button {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.partner-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.partner-card {
+    background-color: white;
+    border: 1px solid #0c243c;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #01c4c7;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.partner-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.partner-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.partner-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.date-button {
+    display: block;
+    background-color: #01c4c7;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.date-button:hover {
+    background-color: #0c243c;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border: radius 20px; 
+    background-color: #01c4c7;
+}
